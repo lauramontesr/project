@@ -1,0 +1,13 @@
+<body>
+  {{> email}}
+</body>
+
+<template name="email">
+  {{#if done}}
+    <p>Thank you for your interest. You will receive our weekly newsletter!</p>
+  {{else}}
+    <label for="email">Enter your email address to receive our latest news</label><br/>
+    <input type="text" id="email" size="45" />
+    <input type="button" id="btn" value="Submit" />
+  {{/if}}
+</template>
